@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="py-4 px-8 flex justify-end fixed top-0 w-full bg-white shadow-sm">
+    <div class="hidden md:flex gap-6">
+      <a href="/" class="font-semibold text-xl hover:text-primary-500">Home</a>
+      <a href="./work.html" class="font-semibold text-xl hover:text-primary-500">Works</a>
+      <a href="./blog.html" class="font-semibold text-xl  hover:text-primary-500">Blog</a>
+      <a href="./details.html" class="font-semibold text-xl hover:text-primary-500">Details</a>
+    </div>
+    <i id="hamburger" class="fa-solid fa-bars text-2xl md:hidden"></i>
+    <div id="dropdown" class="flex hidden md:hidden flex-col gap-5  fixed top-14 right-2 border border-darkorange-500 text-center px-8 py-5 rounded-lg right-0 bg-gray-100">
+      <a href="/" class="font-semibold text-xl hover:text-primary-500 border-b-2 border-gray-500">Home</a>
+      <a href="./work.html" class="font-semibold text-xl hover:text-primary-500 border-b-2 border-gray-500">Works</a>
+      <a href="./blog.html" class="font-semibold text-xl  hover:text-primary-500  border-b-2 border-gray-500">Blog</a>
+      <a href="./details.html" class="font-semibold text-xl hover:text-primary-500  border-b-2 border-gray-500">Details</a>
+    </div>
+  </header>
+      <main class="mt-16 p-6 flex flex-col gap-6 md:max-w-[70vw] md:mx-auto">
+        <h1 class="text-4xl font-bold text-black md:text-5xl">Blog</h1>
+        <div class="bg-white flex flex-col gap-5">
+          <h4 class="text-premium-500 text-2xl font-semibold md:text-3xl">
+            UI Interactions of the week
+          </h4>
+          <p class="flex gap-6 items-center text-premium-500 md:text-xl ">
+            <span>12 Feb 2019</span>
+            <span class="w-[1px] h-6 bg-black"></span>
+            <span class="text-gray-500">Express, Handlebars</span>
+          </p>
+          <p class="text-premium-500 md:text-xl border-b  border-gray-300 pb-4">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div class="bg-white flex flex-col gap-5">
+          <h4 class="text-premium-500 text-2xl font-semibold md:text-3xl">
+            UI Interactions of the week
+          </h4>
+          <p class="flex gap-6 items-center text-premium-500 md:text-xl ">
+            <span>12 Feb 2019</span>
+            <span class="w-[1px] h-6 bg-black"></span>
+            <span class="text-gray-500">Express, Handlebars</span>
+          </p>
+          <p class="text-premium-500 md:text-xl border-b  border-gray-300 pb-4">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div class="bg-white flex flex-col gap-5">
+          <h4 class="text-premium-500 text-2xl font-semibold md:text-3xl">
+            UI Interactions of the week
+          </h4>
+          <p class="flex gap-6 items-center text-premium-500 md:text-xl ">
+            <span>12 Feb 2019</span>
+            <span class="w-[1px] h-6 bg-black"></span>
+            <span class="text-gray-500">Express, Handlebars</span>
+          </p>
+          <p class="text-premium-500 md:text-xl border-b  border-gray-300 pb-4">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div class="bg-white flex flex-col gap-5">
+          <h4 class="text-premium-500 text-2xl font-semibold md:text-3xl">
+            UI Interactions of the week
+          </h4>
+          <p class="flex gap-6 items-center text-premium-500 md:text-xl ">
+            <span>12 Feb 2019</span>
+            <span class="w-[1px] h-6 bg-black"></span>
+            <span class="text-gray-500">Express, Handlebars</span>
+          </p>
+          <p class="text-premium-500 md:text-xl border-b  border-gray-300 pb-4">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+
+      </main>
+      <footer class="flex flex-col items-center gap-3 mt-20  mb-12">
+        <div>
+          <i class="fa-brands fa-facebook text-4xl m-4"></i>
+          <i class="fa-brands fa-instagram text-4xl m-4"></i>
+          <i class="fa-brands fa-twitter text-4xl m-4"></i>
+          <i class="fa-brands fa-linkedin text-4xl m-4"></i>
+        </div>
+
+        <p>Copyright &copy; 2020 All rights reserved</p>
+      </footer>
+
+    <!-- Don't remove these 2 script tags -->
+    <script type="module" src="./main.js"></script>
+    <script src="./app.js" ></script>
+  </body>
+  </html>

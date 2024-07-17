@@ -1,16 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+ <html lang="en">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Vite App</title>
-</head>
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Vite App</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ </head>
 
-<body>
-	<script type="module" src="./main.js"></script>
+ <body>
+   <header class="py-4 px-8 flex justify-end fixed top-0 w-full bg-white shadow-sm">
+     <div class="hidden md:flex gap-6">
+       <a href="/" class="font-semibold text-xl hover:text-primary-500">Home</a>
+       <a href="./work.html" class="font-semibold text-xl hover:text-primary-500">Works</a>
+       <a href="./blog.html" class="font-semibold text-xl  hover:text-primary-500">Blog</a>
+       <a href="./Contact.html" class="font-semibold text-xl hover:text-primary-500">Contact</a>
+     </div> 
+     <i id="hamburger" class="fa-solid fa-bars text-2xl md:hidden"></i>
+     <div id="dropdown" class="flex hidden md:hidden flex-col gap-5  fixed top-14 right-2 border border-darkorange-500 text-center px-8 py-5 rounded-lg right-0 bg-gray-100">
+       <a href="/" class="font-semibold text-xl hover:text-primary-500 border-b-2 border-gray-500">Home</a>
+       <a href="./work.html" class="font-semibold text-xl hover:text-primary-500 border-b-2 border-gray-500">Works</a>
+       <a href="./blog.html" class="font-semibold text-xl  hover:text-primary-500  border-b-2 border-gray-500">Blog</a>
+       <a href="./Contact.html" class="font-semibold text-xl hover:text-primary-500  border-b-2 border-gray-500">Contact</a>
+     </div> 
+      
+   </header>
+   <main>
+     <div class="flex flex-col justify-between p-3 gap-6 mx-auto items-center mt-16 mb-6 md:flex-row md:max-w-[75vw] md:my-44 lg:my-64">
+       <img
+         class="w-52 md:w-64 aspect-square object-cover border rounded-full md:order-2 bg-gray-400"
+         src="./Shiva.jpg"
+         alt="My Profile"
+       />
+       <div class="p-4 gap-6 flex flex-col items-center text-center md:items-start md:text-left">
+         <h1 class="font-bold text-4xl flex flex-col text-premium-500 lg:text-5xl">
+           Hi, I am Shiva Gupta,<span>FullStack Developer</span>
+         </h1>
+         <p class="text-xl text-premium-500 md:text-2xl">
+           Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+           amet sint. Velit officia consequat duis enim velit mollit.
+           Exercitation veniam consequat sunt nostrud amet.
+         </p>
+         <button class="bg-primary-500 px-3 py-2 text-xl rounded-sm text-white font-semibold">
+           Download Resume
+         </button>
+       </div>
+     </div>
 
-	<script src="./app.js"></script>
-</body>
+     <div class="bg-[#EDF7FA] p-3">
+       <div class="flex items-center justify-around md:text-2xl text-xl">
+         <h3 class="text-center text-premium-500 m-2 ">Recent posts</h3>
+         <p class="text-[#00A8CC] hidden md:block">View all</p>
+       </div>
+       <div class="flex flex-col md:flex-row gap-6 py-6 px-4 lg:max-w-[65vw] mx-auto">
+         <div class="bg-white rounded-md flex flex-col gap-5 p-6 shadow-lg ">
+           <h4 class="text-premium-500 text-xl font-bold md:text-2xl">
+             Making a design system from scratch
+           </h4>
+           <p class="flex gap-6 items-center text-premium-500 md:text-xl ">
+             <span>12 Feb 2020</span>
+             <span class="w-[1px] h-6 bg-black"></span>
+             <span>Design, Pattern</span>
+           </p>
+           <p class="text-premium-500 md:text-xl">
+             Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+             amet sint. Velit officia consequat duis enim velit mollit.
+             Exercitation veniam consequat sunt nostrud amet.
+           </p>
+         </div>
+         <div class="bg-white rounded-md flex flex-col gap-5 p-6 shadow-lg">
+           <h4 class="text-premium-500 text-xl font-bold md:text-2xl">
+             Creating pixel perfect icons in Figma
+           </h4>
+           <p class="flex gap-6 items-center text-premium-500 md:text-xl">
+             <span>12 Feb 2020</span>
+             <span class="w-[1px] h-6 bg-black"></span>
+             <span>Design, Pattern</span>
+           </p>
+           <p class="text-premium-500 md:text-xl">
+             Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+             amet sint. Velit officia consequat duis enim velit mollit.
+             Exercitation veniam consequat sunt nostrud amet.
+           </p>
+         </div>
+       </div>
+     </div>
 
-</html>
+     <div class="my-5 p-5 lg:mx-auto lg:w-[70vw]">
+       <h3 class="text-xl text-premium-500 text-center md:text-left  mb-8 md:text-3xl">
+         Featured Works
+       </h3>
+
+       <div class="flex flex-col gap-5 border-b-2 pb-5 border-gray-300 sm:flex-row items-center">
+         <img
+           class="w-full rounded-md sm:w-[350px] object-cover"
+           src=" https://shorturl.at/mGZFl"
+           alt="Dashboard Design"
+         />
+         <div class="flex flex-col gap-5">
+           <h3 class="text-2xl text-premium-500 font-bold lg:text-3xl">
+             Designing Dashboards
+           </h3>
+           <div class="flex gap-4 ">
+             <p class="text-white bg-premium-500 px-4 rounded-full w-fit font-bold lg:text-xl">
+               2020
+             </p>
+             <p class="text-gray-500 lg:text-xl">Dashboard</p>
+           </div>
+           <p class="text-premium-500 lg:text-xl">
+             Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+             amet sint. Velit officia consequat duis enim velit mollit.
+             Exercitation veniam consequat sunt nostrud amet.
+           </p>
+         </div>
+       </div>
+       <div class="flex flex-col gap-5 border-b-2 pb-5 border-gray-300 sm:flex-row items-center">
+         <img
+           class="w-full rounded-md sm:w-[350px] object-cover"
+           src="https://shorturl.at/sN7yB"
+           alt="Portraits"
+         />
+         <div class="flex flex-col gap-5">
+           <h3 class="text-2xl text-premium-500 font-bold lg:text-3xl">
+             Vibrant Portraits of 2020
+           </h3>
+           <div class="flex gap-4 ">
+             <p class="text-white bg-premium-500 px-4 rounded-full w-fit font-bold lg:text-xl">
+               2018
+             </p>
+             <p class="text-gray-500 lg:text-xl">Illustration</p>
+           </div>
+           <p class="text-premium-500 lg:text-xl">
+             Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+             amet sint. Velit officia consequat duis enim velit mollit.
+             Exercitation veniam consequat sunt nostrud amet.
+           </p>
+         </div>
+       </div>
+       <div class="flex flex-col gap-5 border-b-2 pb-5 border-gray-300 sm:flex-row items-center">
+         <img
+           class="w-full rounded-md sm:w-[350px] object-cover"
+           src="https://shorturl.at/WriDN"
+           alt="Days of Malayalam type"
+         />
+         <div class="flex flex-col gap-5">
+           <h3 class="text-2xl text-premium-500 font-bold lg:text-3xl">
+             36 Days of Malayalam type
+           </h3>
+           <div class="flex gap-4 ">
+             <p class="text-white bg-premium-500 px-4 rounded-full w-fit font-bold lg:text-xl">
+               2018
+             </p>
+             <p class="text-gray-500 lg:text-xl">Typography</p>
+           </div>
+           <p class="text-premium-500 lg:text-xl">
+             Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+             amet sint. Velit officia consequat duis enim velit mollit.
+             Exercitation veniam consequat sunt nostrud amet.
+           </p>
+         </div>
+       </div>
+     </div>
+   </main>
+   <footer class="flex flex-col items-center gap-3 mt-44 md:mt-32 mb-12">
+     <div>
+       <i class="fa-brands fa-facebook text-4xl m-4"></i>
+       <i  class="fa-brands fa-instagram text-4xl m-4"></i>
+       <i class="fa-brands fa-twitter text-4xl m-4"></i>
+       <i class="fa-brands fa-linkedin text-4xl m-4"></i>
+     </div>
+
+     <p>Copyright &copy; 2020 All rights reserved</p>
+   </footer>
+
+
+
+
+   <!-- Don't remove these 2 script tags -->
+   <script type="module" src="./main.js"></script>
+   <script src="./app.js" ></script>
+ </body>
+ </html>
